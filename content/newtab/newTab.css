@@ -1,0 +1,121 @@
+div.card {
+	margin-bottom: 20px;
+}
+
+div.card h2.card-header {
+	margin: 0;
+	font-size: 12pt;
+}
+
+div#frequentlyVisitedCard {
+	padding: 16px;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList {
+	padding: 0;
+	margin: 0;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item {
+	list-style-type: none;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-hidden="true"] {
+	display: none;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-expander="true"] > a.frequently-visited-link {
+	justify-content: center;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-expander="true"] > a.frequently-visited-link > span.frequently-visited-icon-container {
+	display: none;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-expander="true"] > a.frequently-visited-link > span.frequently-visited-label {
+	font-size: 14pt;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link {
+	display: flex;
+	align-items: center;
+	color: currentColor;
+	text-decoration: none;
+	gap: 8px;
+	padding: 6px;
+	cursor: pointer;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > span.frequently-visited-icon-container {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > span.frequently-visited-icon-container > img.frequently-visited-icon {
+	max-width: 16px;
+	max-height: 16px;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > span.frequently-visited-label {
+	font-size: 9pt;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-block {
+	margin-left: auto;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link {
+	color: currentColor;
+	text-decoration: none;
+	font-size: 9pt;
+	text-align: center;
+	display: inline-block;
+	padding: 8px 16px;
+	cursor: pointer;
+	position: relative;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-delete,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-edit {
+	position: absolute !important;
+	right: 3px;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-delete {
+	top: 3px;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-edit {
+	top: 27px;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > span.quick-launch-label {
+	display: block;
+	max-width: 80px;
+	margin-top: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > span.quick-launch-icon-container {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	justify-content: center;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link[data-addlink="true"] > span.quick-launch-icon-container {
+	font-size: 48pt;
+	color: rgba(0, 0, 0, .5);
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link[data-addlink="true"] > span.quick-launch-label,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link[data-addlink="true"] > span.quick-launch-icon-container {
+	user-select: none;
+}

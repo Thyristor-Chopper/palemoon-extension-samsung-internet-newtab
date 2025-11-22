@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>sinewtab@pb</em:id>
+    <em:version>1.0.0</em:version>
+    <em:type>2</em:type>
+    <em:name>Samsung Internet New Tab Page</em:name>
+    <em:description>Samsung Internet style New Tab Page</em:description>
+    <em:creator>길고</em:creator>
+    <em:targetApplication>
+      <Description>
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+        <em:minVersion>26.0.0</em:minVersion>
+        <em:maxVersion>33.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

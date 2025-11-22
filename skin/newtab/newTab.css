@@ -1,0 +1,129 @@
+body {
+	background-color: whitesmoke;
+	background-image: url('chrome://sinewtab/skin/newtab/background.svg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div#quickLaunchCard {
+	margin-top: 5%;
+}
+
+div.card {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.card h2.card-header {
+	color: #444;
+}
+
+div#frequentlyVisitedCard {
+	border-radius: 10px;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, .25);
+	background-color: rgba(255, 255, 255, .75);
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item {
+	border-radius: 10px;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > span.frequently-visited-icon-container {
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-pinned="true"] > a.frequently-visited-link > span.frequently-visited-icon-container {
+	position: relative;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-pinned="true"] > a.frequently-visited-link > span.frequently-visited-icon-container:before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background-image: url('chrome://sinewtab/skin/newtab/pin.svg');
+	background-size: 100% 100%;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-block,
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-pin,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-delete,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-edit {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item:not(:hover) > a.frequently-visited-link > button.frequently-visited-block,
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item:not(:hover) > a.frequently-visited-link > button.frequently-visited-pin {
+	visibility: hidden;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-block:before,
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-pin:before,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-delete:before,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-edit:before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-block:before,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-delete:before {
+	background-image: url('chrome://sinewtab/skin/newtab/delete.svg');
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item > a.frequently-visited-link > button.frequently-visited-pin:before {
+	background-image: url('chrome://sinewtab/skin/newtab/pin.svg');
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > button.quick-launch-edit:before {
+	background-image: url('chrome://sinewtab/skin/newtab/edit.svg');
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item:not([data-pinned="true"]) > a.frequently-visited-link > button.frequently-visited-pin:before {
+	transform: rotate(-45deg);
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link > span.quick-launch-icon-container {
+	border-radius: 18px;
+	background-color: white;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, .2);
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link[data-addlink="true"] > span.quick-launch-icon-container {
+	border-style: dashed;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, .1);
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link {
+	border-radius: 10px;
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link:not(:hover) > button.quick-launch-delete,
+div#quickLaunchCard div#quickLaunchGrid > a.quick-launch-link:not(:hover) > button.quick-launch-edit {
+	visibility: hidden;
+}
+
+div#frequentlyVisitedCard ul#frequentlyVisitedList > li.frequently-visited-item[data-expander="true"] {
+	border-top: 1px dashed rgba(0, 0, 0, .1);
+}

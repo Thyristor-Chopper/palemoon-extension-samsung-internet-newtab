@@ -1,0 +1,6 @@
+content	sinewtab				content/
+locale	sinewtab	ko			locale/ko/
+locale	sinewtab	en-US		locale/en-US/
+skin	sinewtab	classic/1.0	skin/
+
+override	chrome://browser/content/newtab/newTab.xhtml	chrome://sinewtab/content/newtab/newTab.xhtml

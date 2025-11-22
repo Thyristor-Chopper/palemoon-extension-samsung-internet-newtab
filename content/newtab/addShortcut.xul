@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://browser/skin/" type="text/css"?>
+
+<!DOCTYPE dialog [
+<!ENTITY % addQuickLaunchDTD SYSTEM "chrome://sinewtab/locale/addQuickLaunch.dtd" >
+%addQuickLaunchDTD;
+]>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="main-window" title="&addQuickLaunchTitle.label;" windowtype="newtab:addshortcut" width="420" persist="screenX screenY" buttons="accept,cancel" spacerflex="1" ondialogaccept="return save();">
+	<vbox>
+		<vbox>
+			<label value="&shortcutUrl.label;:" />
+			<textbox id="urlInput" />
+		</vbox>
+		
+		<spacer height="10" />
+		
+		<vbox>
+			<label value="&title.label;:" />
+			<textbox id="titleInput" />
+		</vbox>
+		
+		<spacer height="10" />
+		
+		<vbox>
+			<label value="&frequentlyVisited.label;:" />
+			<tree id="frequentlyVisited" height="100" flex="1" seltype="single" onselect="fillPageInfo(this);">
+				<treecols>
+					<treecol id="fTitle" label="&title.label;" flex="1" />
+					<treecol id="fUrl" label="&url.label;" flex="1" />
+				</treecols>
+				<treechildren id="frequentlyVisitedItems" />
+			</tree>
+		</vbox>
+		
+		<spacer height="10" />
+		
+		<vbox>
+			<label value="&recentHistory.label;:" />
+			<tree id="recentlyVisited" height="100" flex="1" seltype="single" onselect="fillPageInfo(this);">
+				<treecols>
+					<treecol id="rTitle" label="&title.label;" flex="1" />
+					<treecol id="rUrl" label="&url.label;" flex="1" />
+				</treecols>
+				<treechildren id="recentlyVisitedItems" />
+			</tree>
+		</vbox>
+	</vbox>
+	
+	<script type="application/javascript" src="chrome://sinewtab/content/newtab/addShortcut.js" />
+</dialog>
+
